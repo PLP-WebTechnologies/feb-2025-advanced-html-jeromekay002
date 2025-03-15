@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced HTML5 Elements and Forms</title>
+  </head>
+  <body>
+    <!-- ordered list with roman numbers -->
+    <div class="container">
+      <h2>Ordered List(I)</h2>
+      <ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+    </div>
+
+    <!-- external image from pexel -->
+    <div class="ext-image">
+      <h2>External Image</h2>
+      <img
+        src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Photo of Programming of code"
+        width="300"
+        height="300"
+      />
+    </div>
+
+    <!-- table of 5 contacts -->
+    <div class="container">
+      <h2>Contact Information</h2>
+      <table class="contact-table">
+        <thead>
+          <th>FullName</th>
+          <th>Address</th>
+          <th>Phone Number</th>
+          <th>Email</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jerome Kaloki</td>
+            <td>Nairobi 047</td>
+            <td>07123456789</td>
+            <td>jeromekaloki@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Morris Ndungu</td>
+            <td>Nairobi 047</td>
+            <td>07123456789</td>
+            <td>morrisndugu@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Emily mueni</td>
+            <td>Nairobi 047</td>
+            <td>07123456789</td>
+            <td>emilymueni@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Maureen mweni</td>
+            <td>Nairobi 047</td>
+            <td>07123456789</td>
+            <td>maureenmweni@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Jerome Kaloki</td>
+            <td>Nairobi 047</td>
+            <td>07123456789</td>
+            <td>jeromekaloki@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container">
+      <h2>Registration Form</h2>
+      <form action="example_submition_form.html" method="post">
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your FullName"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="Email" class="form-label">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          /><br /><br />
+        </div>
+        <div class="form-group">
+          <label for="password" class="form-label">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+            minlength="8"
+          /><br /><br />
+        </div>
+        <div class="form-group">
+          <label for="date" class="form-label">Date of Birth:</label>
+          <input type="date" id="date" name="date" required /><br /><br />
+        </div>
+
+        <div class="form-group">
+          <label for="country" class="form-label">Country:</label>
+          <select id="country" name="country">
+            <option value="0">Select a country</option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Machakos">Machakos</option>
+            <option value="Nyeri">Nyeri</option>
+            <option value="Busia">Busia</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date" class="form-label">Select Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+
+        <div class="form-group">
+          <label for="date" class="form-label">Select Interests:</label>
+          <input type="checkbox" id="sports" name="interests" value="sports" />
+          <label for="sports">Sports</label>
+          <input type="checkbox" id="music" name="interests" value="music" />
+          <label for="music">Music</label>
+          <input
+            type="checkbox"
+            id="reading"
+            name="interests"
+            value="reading"
+          />
+          <label for="reading">Reading</label>
+        </div>
+        <div class="form-group">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
